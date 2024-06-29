@@ -108,6 +108,7 @@ Implement memory allocation using C programming language:
    * Handle memory requests and releases.
    * Track free memory and allocated blocks.
    * (Bonus) Implement memory compaction to reduce external fragmentation.
+
    
 - Create your application using the C programming language on the FIU Ocelot server for the UNIX operating system.
 - Create a short video of a maximum of 6 minutes of your running application and source codes.
