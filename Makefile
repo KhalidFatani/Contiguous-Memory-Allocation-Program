@@ -1,3 +1,4 @@
+//Needs to be updated
 CC = gcc
 CFLAGS = -Wall -pthread
 TARGET = sorting
