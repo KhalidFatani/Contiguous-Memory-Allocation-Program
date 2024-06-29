@@ -4,39 +4,37 @@ Names: Elizabeth Fassler (6336712) and Khalid Fatani (6363026).
 
 Operating Systems Principles
 
-Programming Assignment 2
+Programming Assignment 3
 
 1245-FIU01-COP-4610-SECRVDC-52544
 
-Professor Kiavash Bahreini
+Professor Kiavash Bahreini - Email: kbahrein@fiu.edu
 
-Github Repository: https://github.com/Operating-Systems-Group/Multithreaded-Sorting-Application/tree/main
+Samreen Abbasi (She/Her) - Email: sabba027@fiu.edu
+
+Shabazuddin Mohammad (He/Him/His) - Email: smoha102@fiu.edu
+
+Github Repository: [https://github.com/Operating-Systems-Group/Multithreaded-Sorting-Application/tree/main](https://github.com/KhalidFatani/Contiguous-Memory-Allocation-Program/tree/main)
 
 _____________________________________________________________________________________________________________
-Elizabeth Fassler: Created team project repository and readme file on Github.
-- Finished and updated sorting.c and Makefile.
+Elizabeth Fassler: 
+- Finished and updated memory.c file.
+- Designed a working Makefile.
 _____________________________________________________________________________________________________________
-Khalid Fatani: Created the basic pseudocode for sorting.c in Github repository.
-- Created video for programming assignment 2.
+Khalid Fatani: 
+- Created team project repository and readme file on Github.
+- Wrote basic pseudocode.
+- Worked on memory.c file.
+- Created video for programming assignment 3.
 _____________________________________________________________________________________________________________
-
 ### Meetings
 
-06/11 2:30 PM Zoom Meeting
+
 _____________________________________________________________________________________________________________
 ### Run Commands in Terminal
-```sh
-make
-```
 
-```sh
-gcc -Wall -pthread -c sorting.c -o sorting.o
-```
 
-```sh
-./sorting
-```
-
+_____________________________________________________________________________________________________________
 ### Introduction
 
 Write a multithreaded sorting program in C that works as follows: A list of integers is divided into two smaller lists of equal size. Two separate threads (which we will term sorting threads) sort each sublist using a sorting algorithm of your choice. The two sublists are then merged by a third thread—a merging thread—which merges the two sublists into a single sorted list.
@@ -49,7 +47,7 @@ Figure 1: Multithreaded Sorting.
 
 This programming project will require passing parameters to each of the sorting threads. In particular, it will be necessary to identify the starting index from which each thread is to begin sorting. Refer to the instructions in Project 1 for details on passing parameters to a thread.
 Once all sorting threads have exited, the parent thread will output the sorted array.
-
+_____________________________________________________________________________________________________________
 ### Notes
 
 - Create your application using the C programming language on the FIU Ocelot server for the UNIX operating system.
@@ -57,18 +55,9 @@ Once all sorting threads have exited, the parent thread will output the sorted a
 - Create a text or Word file called Instructions.txt and write down the steps to run your application (your source codes should be error-free).
 - Add the recorded video file, the text/Word files, and your project, including the source codes, Makefile, etc., into a zip file.
 - Upload the zip file to Canvas before the deadline.
+_____________________________________________________________________________________________________________
+### Basic pseudocode:
 
-### Code
 
-Basic pseudocode:
-- Declare two global int arrays "unsorted" and "sorted".
-- Create two sorting threads each with their own function "sort1" and "sort2".
-- Create a merging thread with its own function "merge".
-
-In the main function: 
-- Fill unsorted array with random integers (can be hardcoded to have a full array).
-- Call both sorting functions, passing the global unsorted array, they will each return with a shorter sorted array.
-- Call the merging function, passing the two sorted arrays to be put into the global sorted array.
-- Output the sorted array to the console.
 
 
