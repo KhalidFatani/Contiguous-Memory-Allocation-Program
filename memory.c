@@ -39,7 +39,7 @@ int optimal(int* ref_str, int size, int limit){
     //look at ref_str[cur+1:cur+limit] to see which one has not been referred to the longest in the future
     page_faults++;
     //This is the very first line that is differnet in other algorithms
-    //Make changes below ####
+    //We will need to work on this part ######################################################################################################################
     unsigned unused = (1<<size) - 1;
     int victim;
     for(int k = 1; k <= limit && unused && cur + k < 1000000;k++){
